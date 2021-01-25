@@ -5,7 +5,7 @@ import MyPosts from "./MyPosts/MyPosts";
 const Profile = () => {
     return (
         <div>
-            <div>
+            <div className={s.fontImg}>
                 <img src="https://bigpicture.ru/wp-content/uploads/2015/01/AUcommunes10.jpg" alt=""/>
             </div>
             <div>
