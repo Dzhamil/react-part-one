@@ -5,7 +5,8 @@ const Header = () => {
     return (
         <header className={s.header}>
             <img
-                src="https://i7.pngflow.com/pngimage/554/814/png-google-chrome-web-browser-computer-icons-firefox-logo-monochrome-google-chrome-chrome-os-clipart-thumb.png"
+                className={s.logo}
+                src="https://www.clipartmax.com/png/full/246-2461592_computer-icons-electron-microscope-portable-network-icon.png"
                 alt=""/>
         </header>
     );
