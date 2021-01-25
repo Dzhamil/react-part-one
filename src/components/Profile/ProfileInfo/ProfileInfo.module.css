@@ -1,0 +1,14 @@
+.fontImg img{
+    width: 100%;
+}
+
+.profileInfo {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-color: lightskyblue ;
+}
+
+.descriptionBlock {
+    padding: 10px;
+}
