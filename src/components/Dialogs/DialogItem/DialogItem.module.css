@@ -1,0 +1,8 @@
+ .dialog {
+    color: lightskyblue;
+    padding: 5px;
+}
+
+.active {
+    color: black;
+}
