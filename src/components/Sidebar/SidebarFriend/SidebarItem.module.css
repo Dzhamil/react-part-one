@@ -1,0 +1,16 @@
+.item {
+}
+
+.item .avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.item .userName span{
+    font-size: x-small;
+}
+
+.item .userName {
+    text-align: center;
+}
