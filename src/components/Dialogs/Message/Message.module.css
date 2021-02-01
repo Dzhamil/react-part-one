@@ -1,3 +1,7 @@
 .message {
-
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
