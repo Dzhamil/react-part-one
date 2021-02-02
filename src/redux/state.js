@@ -1,6 +1,3 @@
-import s from "../components/Navbar/Navbar.module.css";
-import {NavLink} from "react-router-dom";
-
 let state = {
     profilePage: {
         posts: [
@@ -73,6 +70,16 @@ let state = {
             }
         ]
     }
+}
+
+export let addPost = (postMessage)=> {
+    let newPost = {
+        id: 33,
+        message: postMessage,
+        likeCounts: 0
+    }
+
+    state.profilePage.posts.push(newPost)
 }
 
 export default state;
