@@ -6,3 +6,52 @@
 .dialogs .header {
     padding-left: 10px;
 }
+
+.dialogs .dialogsItems {
+    background: linear-gradient(to right, lightgray ,slategrey);
+}
+
+
+.dialogs .bottom {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.inputMsg textarea {
+    min-width: 90%;
+    resize: initial;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: Arial, serif;
+    font-size: large;
+}
+
+.inputMsg textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px lightskyblue;
+}
+
+.sendMsgBtn button {
+    appearance: none;
+    min-width: 90%;
+    font-size: 20px;
+    padding: 10px;
+    background: dodgerblue;
+    border-radius: 10px;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.sendMsgBtn button:hover {
+    background: darkslateblue;
+}
+
+.sendMsgBtn button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px lightskyblue;
+}

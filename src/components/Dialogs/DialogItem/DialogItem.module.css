@@ -1,6 +1,6 @@
 .dialog {
     color: lightskyblue;
-    background-color: lightblue;
+    background-color: lightskyblue;
     margin: 5px;
     display: grid;
     grid-template-columns: 4fr 6fr;
@@ -14,20 +14,29 @@
     padding-top: 2px;
 }
 
-.navLink {
-    padding-top: 20px;
+.dialog .userName {
+    padding-top: 15px;
 }
 
-.navLink a {
-    text-decoration: none;
+.dialog .userName span {
+    font-size: x-large;
+}
+
+.dialog:hover {
+    background-color: dodgerblue;
     font-weight: bold;
-    color: darkblue;
 }
 
-a.activeLink {
+.dialog .userName a {
+    text-decoration: none;
+    color: white;
+}
+
+.dialog .userName a.activeLink {
     border: 10px;
     color: black;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     0px 8px 13px rgba(0,0,0,0.1),
     0px 18px 23px rgba(0,0,0,0.1);
 }
+
