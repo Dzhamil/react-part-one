@@ -3,16 +3,15 @@
     grid-template-columns: 3fr 9fr;
 }
 
-.dialogs .header {
+.header {
     padding-left: 10px;
 }
 
-.dialogs .dialogsItems {
+.dialogsItems {
     background: linear-gradient(to right, lightgray ,slategrey);
 }
 
-
-.dialogs .bottom {
+.bottom {
     padding-top: 20px;
     display: grid;
     grid-template-columns: 5fr 1fr;

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Sidebar.module.css';
-import SidebarItem from "./SidebarFriend/SidebarItem";
+import SidebarItem from "./sidebarFriend/SidebarItem";
 
 const Sidebar = (props) => {
     let friends = props.friends.map(friend => <SidebarItem name={friend.name} avatarUrl={friend.avatarUrl} />);

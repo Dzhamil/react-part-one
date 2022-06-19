@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Navbar.module.css';
-import NavbarItem from "./NavbarItem/NavbarItem";
-import Sidebar from "../Sidebar/Sidebar";
+import NavbarItem from "./navbarItem/NavbarItem";
+import Sidebar from "./sidebar/Sidebar";
 
 
 const Navbar = (props) => {

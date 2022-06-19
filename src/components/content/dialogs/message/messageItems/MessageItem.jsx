@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './MessageItem.module.css'
 
-
 const MessageItem = (props) => {
     let src;
     props.src === "consumer" ? src = s.consumer : src = s.producer;

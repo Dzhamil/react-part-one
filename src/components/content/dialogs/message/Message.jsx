@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Message.module.css'
-import MessageItem from "./MessageItems/MessageItem";
-import MessageItemEmpty from "./MessageItems/MessageItemEmpty";
+import MessageItem from "./messageItems/MessageItem";
+import MessageItemEmpty from "./messageItems/MessageItemEmpty";
 
 
 const Message = (props) => {

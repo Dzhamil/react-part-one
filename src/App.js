@@ -1,31 +1,16 @@
-import './App.css';
+import s from './App.module.css';
 
 import React from "react";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
-
-import Settings from "./components/Settings/Settings";
-import News from "./components/News/News";
-import Music from "./components/Music/Music";
-import {Route} from "react-router-dom";
+import Header from "./components/header/Header";
+import Navbar from "./components/navbar/Navbar";
+import Content from "./components/content/Content";
 
 const App = (props) => {
     return (
-        <div className='appWrapper'>
-            <Header/>
+        <div className={s.appWrapper}>
+            <Header state={props.state.header}/>
             <Navbar state={props.state.navbar}/>
-            <div className='appWrapper-content'>
-                <Route path='/profile' render={() => <Profile
-                    profilePage={props.state.profilePage}
-                    dispatch={props.dispatch}
-                />}/>
-                <Route path='/dialogs' render={() => <Dialogs state={props.state.messagesPage}/>}/>
-                <Route path='/news' render={() => <News/>}/>
-                <Route path='/music' render={() => <Music/>}/>
-                <Route path='/settings' render={() => <Settings/>}/>
-            </div>
+            <Content state={props.state.content} dispatch={props.dispatch}/>
         </div>
     );
 }
