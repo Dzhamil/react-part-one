@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
-import store from "./redux/state";
+import store from "./redux/redux-store";
 
 let rerenderEntireThree = (state) => {
     ReactDOM.render(
@@ -19,8 +19,12 @@ let rerenderEntireThree = (state) => {
     );
 }
 
-
 rerenderEntireThree(store.getState());
-store.subscribe(rerenderEntireThree);
+store.subscribe(
+    () => {
+    let state = store.getState()
+    rerenderEntireThree(state);
+}
+);
 
 reportWebVitals();

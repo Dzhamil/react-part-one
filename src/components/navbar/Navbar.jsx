@@ -5,14 +5,14 @@ import Sidebar from "./sidebar/Sidebar";
 
 
 const Navbar = (props) => {
-    let navbarItems = props.state.navbarItems.map(item => <NavbarItem path={item.to} itemName={item.itemName}/>);
+    let navbarItems = props.navbarPanel.navbarItems.map(item => <NavbarItem path={item.to} itemName={item.itemName}/>);
     return (
         <nav className={s.nav}>
             <div>
                 {navbarItems}
             </div>
             <div>
-                <Sidebar friends={props.state.friends}/>
+                <Sidebar friends={props.navbarPanel.friends}/>
             </div>
         </nav>
     );

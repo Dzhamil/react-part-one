@@ -1,16 +1,16 @@
 import s from './App.module.css';
 
 import React from "react";
-import Header from "./components/header/Header";
-import Navbar from "./components/navbar/Navbar";
-import Content from "./components/content/Content";
+import HeaderContainer from "./components/header/HeaderContainer";
+import NavbarContainer from "./components/navbar/NavbarContainer";
+import ContentContainer from "./components/content/ContentContainer";
 
 const App = (props) => {
     return (
         <div className={s.appWrapper}>
-            <Header state={props.state.header}/>
-            <Navbar state={props.state.navbar}/>
-            <Content state={props.state.content} dispatch={props.dispatch}/>
+            <HeaderContainer state={props.state} />
+            <NavbarContainer state={props.state} />
+            <ContentContainer state={props.state} dispatch={props.dispatch}/>
         </div>
     );
 }

@@ -6,8 +6,8 @@ const Header = (props) => {
         <header className={s.header}>
             <img
                 className={s.logo}
-                src={props.state.img.url}
-                alt={props.state.img.alt}/>
+                src={props.headerPanel.img.url}
+                alt={props.headerPanel.img.alt}/>
         </header>
     );
 }
