@@ -1,9 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
+import StoreContext from "../../StoreContext";
 
-const NavbarContainer = (props) => {
+const NavbarContainer = () => {
     return (
-        <Navbar navbarPanel={props.state.navbarPanel}/>
+        <StoreContext.Consumer>
+        { (store) => {
+                let state = store.getState();
+                return  <Navbar navbarPanel={state.navbarPanel}/>
+            }
+        }
+        </StoreContext.Consumer>
     );
 }
 

@@ -1,9 +1,16 @@
 import React from "react";
 import Header from "./Header";
+import StoreContext from "../../StoreContext";
 
-const HeaderContainer = (props) => {
+const HeaderContainer = () => {
     return (
-       <Header headerPanel={props.state.headerPanel} />
+        <StoreContext.Consumer>
+        { (store) => {
+                let state = store.getState();
+                return <Header headerPanel={state.headerPanel} />
+            }
+        }
+        </StoreContext.Consumer>
     );
 }
 
